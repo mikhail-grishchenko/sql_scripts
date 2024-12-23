@@ -103,8 +103,6 @@ LEFT JOIN gmv_2p_2_nedeli ON fp.ArticleNumber = gmv_2p_2_nedeli.ArticleNumber
 LEFT JOIN tb_tr_category tb_tr ON fc.item_business_group_name = tb_tr.bg
 )
 
-
-
 SELECT 
     BG,
     ML1,
@@ -115,7 +113,6 @@ SELECT
     merchant_id
     GMV_product,
     stock,
-  
     tr_category,
     ROW_NUMBER() OVER (
         ORDER BY 
